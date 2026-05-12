@@ -34,23 +34,11 @@ A Data Product Owner is accountable for the quality, reliability, and fitness-fo
 
 **Championing quality at source.** Quality problems are almost always cheaper to fix where they start. As business owner, you have the authority to influence the operational processes that generate the data. Raising issues with the right people, pushing back on process changes that would degrade quality, implementing better input controls: this is some of the most valuable work a business owner can do, and it's the work that gets skipped most often.
 
-**Maintaining an inventory of defects.** You're accountable for a complete, current inventory of every known defect in your data product: data quality issues, schema problems, performance degradation, contract breaches, and any other gap between what the product delivers and what it promises. For each defect, document the remediation plan and target resolution date, tracked against your KPIs. This makes problems visible to your management and to your consumers, and prevents issues from quietly accumulating. It's a formal requirement under BCBS 239 frameworks, but it's a critical discipline regardless of regulatory scope. If a defect can't be resolved within your authority, escalate it with full context so the people with decision-making power can see what they're choosing to accept.
+**Maintaining an inventory of defects.** You're accountable for a complete, current inventory of every known defect in your data product: data quality issues, schema problems, performance degradation, contract breaches, and any other gap between what the product delivers and what it promises. For each defect, document the remediation plan and target resolution date, tracked against your KPIs. This is a formal requirement under BCBS 239 frameworks, but it's a critical discipline regardless of regulatory scope. If a defect can't be resolved within your authority, escalate it with full context so the people with decision-making power can see what they're choosing to accept.
 
-**Representing your consumers.** Consumers depend on your product and can't fix the problems they encounter. Part of your role is to understand how the product is being used, what expectations consumers have around quality and timeliness, and whether you're genuinely meeting them.
+**Representing your consumers.** Consumers depend on your product and can't fix the problems they encounter. Part of your role is to understand how the product is being used, what expectations consumers have around quality and timeliness, and whether able to meeting them before onboarding. 
 
 **Keeping the consumer registry current.** You should know who consumes your product and for what purpose. This isn't bureaucracy. It's what allows you to manage change responsibly and understand the full impact of decisions you make about the product.
-
----
-
-### What good owners actually care about
-
-**Consumer trust.** If consumers trust your data, they build on it without hesitation. If they don't, they spend time verifying it, patching it, or quietly building their own alternative. Lost trust is slow to recover. Earning it requires consistency: data that's accurate, timely, and behaves the way the contract says it will.
-
-**Reducing downstream rework.** Every hour a data engineer or analyst spends correcting data that should have been right at source is wasted. It's also invisible to the producing team. The cost lands elsewhere. An owner who understands this pushes quality upstream, so consumers spend their time creating value rather than correcting errors.
-
-**The health of the product over time.** Data products degrade. Schemas drift, source systems change, usage patterns shift. An owner who's paying attention spots this before it becomes a consumer-facing problem. Proactive maintenance (reviewing the contract, checking quality metrics, staying in contact with consumers) is what separates a well-governed product from one that quietly accumulates debt.
-
-**What the data actually enables.** Data products exist to support decisions and business outcomes. Owners who understand how their data is being used make better calls about priorities, investment, and what quality level is genuinely required.
 
 ---
 
@@ -90,21 +78,11 @@ The honest problem with data product ownership in most organisations is that the
 
 ---
 
-## Closing the accountability gap
-
-In most large organisations, the gap between data producers and data consumers is significant. The operational business teams that produce data don't consume it. The teams that do consume it (finance, risk, compliance) can't fix the quality problems they encounter because they don't own the source systems.
-
-Data engineering teams sit in the middle, spending too much effort correcting data rather than building value. This is expensive and addresses symptoms rather than causes.
-
-Closing the gap requires three things. Every data product must have a named business owner. This isn't optional; if there's no named owner, the product is ungoverned and quality issues won't get resolved. Business teams must have a reason to care about the quality of data they produce, whether through performance metrics, regulatory accountability, or internal charge-back models. And there must be a central governance function (a Chief Data Office, a DAO function, or equivalent) with real authority to hold business owners accountable, set and enforce data standards, and escalate unresolved issues. Advisory-only governance doesn't work.
-
----
-
 ## Funding data product development
 
-One of the most persistent structural problems in data platforms is how development gets funded. In most organisations today, funding follows business deliverables. A project to deliver a risk report funds the data product needed to produce it. When the project ends, the funding stops, leaving the product in place but often unmaintained.
+One of the most persistent problems in data platforms is how development gets funded. In most cases, funding follows business deliverables. A project to deliver a risk report funds the data product needed to produce it. When the project ends, the funding stops, leaving the product in place but with no additional funding to mature it.
 
-This produces contextual, single-purpose data products. The next project builds its own product from scratch, usually overlapping with something that already exists. The organisation ends up with many products doing similar things, built independently, maintained separately, and inconsistent with each other. Generic, reusable products (which require upfront investment with diffuse benefits) never get funded, because no single project can justify the cost.
+This promotes the production of contextual, single-purpose data products. The next project builds its own product from scratch, usually overlapping with something that already exists. The organisation ends up with many products doing similar things, built independently, maintained separately, and inconsistent with each other. Generic, reusable products (which require upfront investment with diffuse benefits) never get funded, because no single project can justify the cost.
 
 **Consolidated consumer requirements** offer one route out. Where multiple business areas are asking for similar data, their requirements should be aggregated and presented to the data producer as a single request. Risk and Finance working together to articulate a shared data need is far more likely to result in a well-designed generic product than each team asking separately. This requires a governance function capable of identifying overlapping requirements across business lines and brokering shared solutions.
 
@@ -140,7 +118,7 @@ Ownership, governance, funding, and platform strategy all need to be codified in
 
 The model needs to answer some specific questions: How are data product requirements captured and prioritised? Who decides when a requirement becomes a generic product versus a contextual one? Who approves the creation of a new data product? How are breaking changes approved and communicated? Who is accountable when a data quality issue isn't resolved? How are deprecation decisions made, and who has the authority to make them? How is the consumer registry maintained?
 
-These don't have universal answers. They'll differ by organisation. But they have to be answered, documented, communicated, and enforced. A governance model that exists only as a slide deck doesn't govern anything.
+These questions need to be answered, documented, communicated, and enforced.
 
 ---
 
